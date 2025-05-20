@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsun Tanıtım</title>
+  <style>
+  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f9ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #003366;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: white;
+}
+
+.hero {
+  background: linear-gradient(to right, #004080, #66a3ff);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+main {
+  padding: 30px 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  padding: 0 10px 15px;
+  font-size: 0.95rem;
+}
+
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+  </style>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    console.log("Samsun Tanıtım Sitesi yüklendi.");
+});
+
+  </script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1 class="logo">Samsun</h1>
+      <nav>
+        <a href="#giris">Ana Sayfa</a>
+        <a href="#tarih">Tarih</a>
+        <a href="#dogal">Doğal Güzellikler</a>
+        <a href="#yemek">Yemekler</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="giris" class="hero">
+      <h2>Karadeniz'in İncisi</h2>
+      <p>Samsun, tarihi ve doğasıyla Karadeniz'in parlayan yıldızıdır.</p>
+    </section>
+
+    <section id="tarih">
+      <h2>Tarihi</h2>
+      <p>Samsun, Atatürk'ün 19 Mayıs 1919'da Kurtuluş Savaşı'nı başlattığı şehir olarak önemlidir.</p>
+    </section>
+
+    <section id="dogal">
+      <h2>Doğal Güzellikler</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Atakum_beach.jpg" alt="Atakum Plajı">
+          <h3>Atakum Plajı</h3>
+          <p>Upuzun sahiliyle yazın vazgeçilmez noktası.</p>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/K%C4%B1z%C4%B1l%C4%B1rmak_Delta_Bird_Sanctuary.jpg" alt="Kızılırmak Deltası">
+          <h3>Kızılırmak Deltası</h3>
+          <p>Kuş cenneti olarak bilinen UNESCO geçici miras alanı.</p>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Sahin_Kaya_Canyon.jpg" alt="Şahinkaya Kanyonu">
+          <h3>Şahinkaya Kanyonu</h3>
+          <p>Doğa yürüyüşü ve tekne turları için eşsiz bir destinasyon.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="yemek">
+      <h2>Yöresel Yemekler</h2>
+      <p>Mısır ekmeği, kaz tiridi, nokul ve daha fazlası...</p>
+    </section>
+
+    <section id="iletisim">
+      <h2>İletişim</h2>
+      <p>Bize ulaşmak için: info@samsun.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Samsun Tanıtım Sitesi</p>
+  </footer>
+</body>
+</html>
