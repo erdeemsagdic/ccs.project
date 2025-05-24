@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="iletisim.css">
+    <title>Erdem's website</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2><a href="#">ERDEM.</a></h2>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav_links">
+                    <li><a href="anasayfa.html">Anasayfa</a></li>
+                    <li><a href="ilgialanlarım.html">İlgi alanlarım</a></li>
+                    <li><a href="memlekketim.html">Memleketim</a></li>
+                    <li><a href="miraslarimiz.html">Miraslarımız</a></li>
+                    <li><a href="iletişim.html">İletişim</a></li>
+                    <li><a href="cv.html">Özgeçmiş</a></li>
+                </ul>
+            </div>
+    </header>
+
+    <div class="container">
+        <h1>İletişim Formu</h1>
+        <form id="contactForm" action="submit.php" method="post">
+            <label for="name">Ad:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">Soyad:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="button" id="validateButton" class="btn">Doğrula</button>
+            <button type="button" id="resetButton" class="btn">Temizle</button>
+            <button type="submit" id="submitButton" class="btn">Gönder</button>
+            <button type="button" id="validateButtonJs" class="btn">Doğrula (JS)</button>
+            <button type="button" id="resetButtonJs" class="btn">Temizle (JS)</button>
+            <button type="button" id="submitButtonJs" class="btn">Gönder (JS)</button>
+        </form>
+    </div>
+    <style>
+        .btn {
+            padding: 8px 15px;
+            margin: 5px;
+            font-size: 14px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="iletisim.js"></script>
+</body>
+</html>
